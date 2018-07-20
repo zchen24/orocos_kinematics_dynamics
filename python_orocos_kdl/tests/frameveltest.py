@@ -196,8 +196,7 @@ def suite():
     suite.addTest(FrameVelTestFunctions('testPickle'))
     return suite
 
-#suite = suite()
-#unittest.TextTestRunner(verbosity=5).run(suite)
 
-
-
+if __name__ == '__main__':
+    suite = suite()
+    unittest.TextTestRunner(verbosity=5).run(suite)
